@@ -5,12 +5,12 @@ import LowerHeader from "./LowerHeader";
 import { SlLocationPin } from "react-icons/sl";
 import { BsSearch } from "react-icons/bs";
 import { BiCart } from "react-icons/bi";
-
 function Header() {
     return (
         <>
             <section>
                 <div className={classes.header__container}>
+                    
                     <div className={classes.logo__container}>
                         {/* logo section*/}
                     <a href="/">
