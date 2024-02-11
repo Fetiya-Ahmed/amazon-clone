@@ -17,7 +17,8 @@ function ProductCard({product, flex, renderDesc, renderAdd}) {
 
 
 
-        const addToCart = ()=>{
+    const addToCart = () => {
+            console.log("add to cart")
             dispatch({
                 type:Type.ADD_TO_BASKET,
                 item:{
