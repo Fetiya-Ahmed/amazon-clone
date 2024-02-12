@@ -1,5 +1,5 @@
 import React, { useContext }  from 'react'
-// import Rating from '@mui/lab/Rating';
+import Rating from '@mui/material/Rating';
 
 import CurrencyFormat from '../CurrencyFormat/CurrencyFormat'
 import classes from './Product.module.css'
@@ -39,7 +39,7 @@ return (
 
             {/* rating */}
             <div className={classes.rating}>
-                {/* <Rating value={rating?.rate} precision={0.1}/> */}
+                { <Rating value={rating?.rate} precision={0.1}/> }
                 {/* count */}
                 <small>{rating?.count}</small>
             </div>
