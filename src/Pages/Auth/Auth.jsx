@@ -1,13 +1,14 @@
 import React, { useState, useContext } from 'react';
-import classes from './SignUp.module.css';
+import classes from './Auth.module.css';
+
 
 import { Link, useNavigate } from 'react-router-dom';
-import { auth } from "../../Utility/action.type";
+import {auth} from "../../Utility/firebase";
 import 'firebase/auth';
 import { ClipLoader } from "react-spinners";
 import { signInWithEmailAndPassword, createUserWithEmailAndPassword } from "firebase/auth";
 import {DataContext} from "../../Components/DataProvider/DataProvider"
-import { Type } from '../../Utility/action.type';
+import {Type} from '../../Utility/action.type';
 function Auth() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
