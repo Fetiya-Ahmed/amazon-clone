@@ -45,7 +45,7 @@ function Auth() {
             setLoading({...loading, signIn:false})
         })
         }else {
-            setLoading({...loading, signIn:true})
+            setLoading({...loading, signUp:true})
             createUserWithEmailAndPassword(auth, email, password)
         .then((userInfo)=>{
             // console.log(userInfo)
@@ -53,12 +53,12 @@ function Auth() {
                 type: Type.SET_USER,
                 user: userInfo.user,
             })
-            setLoading({...loading, signIn:false})
+            setLoading({...loading, signUp:false})
             navigate("/")
         })
         .catch((err)=>{
             setError(err.message)
-            setLoading({...loading, signIn:false})
+            setLoading({...loading, signUp:false})
         })
         }
         
